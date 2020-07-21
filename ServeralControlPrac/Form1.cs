@@ -24,6 +24,12 @@ namespace ServeralControlPrac
             l1.Text = "구글";
             l1.Location = new Point(230, 80);
             Controls.Add(l1);
+            l1.Click += LabelClick;
+        }
+
+        private void LabelClick(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://google.co.kr");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
